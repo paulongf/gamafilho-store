@@ -24,7 +24,7 @@ const LoginPage = () => {
         transition={{ duration: 0.8 }}
       >
         <h2 className="mt-6 text-center text-3xl font-extrabold text-emerald-400">
-          Create your account
+          Criar sua conta
         </h2>
       </motion.div>
 
@@ -41,7 +41,7 @@ const LoginPage = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-300"
               >
-                Email address
+                Email
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -67,7 +67,7 @@ const LoginPage = () => {
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-300"
               >
-                Password
+                Palavra Passe
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -112,12 +112,12 @@ const LoginPage = () => {
           </form>
 
           <p className="mt-8 text-center text-sm text-gray-400">
-            Not a member?{" "}
+            Não é membro?{" "}
             <Link
               to="/signup"
               className="font-medium text-emerald-400 hover:text-emerald-300"
             >
-              Sign up now <ArrowRight className="inline h-4 w-4" />
+              Registre-se agora <ArrowRight className="inline h-4 w-4" />
             </Link>
           </p>
         </div>

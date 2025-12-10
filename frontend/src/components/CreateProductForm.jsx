@@ -63,7 +63,7 @@ const CreateProductForm = () => {
       transition={{ duration: 0.8 }}
     >
       <h2 className="text-2xl font-semibold mb-6 text-emerald-300">
-        Create New Product
+        Criar Novo Produto
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -71,7 +71,7 @@ const CreateProductForm = () => {
             htmlFor="name"
             className="block text-sm font-medium text-gray-300"
           >
-            Product Name
+            Nome do Produto
           </label>
           <input
             type="text"
@@ -93,7 +93,7 @@ const CreateProductForm = () => {
             htmlFor="description"
             className="block text-sm font-medium text-gray-300"
           >
-            Description
+            Descriç
           </label>
           <textarea
             id="description"
@@ -115,7 +115,7 @@ const CreateProductForm = () => {
             htmlFor="price"
             className="block text-sm font-medium text-gray-300"
           >
-            Price
+            Preço
           </label>
           <input
             type="number"
@@ -137,7 +137,7 @@ const CreateProductForm = () => {
             htmlFor="stock"
             className="block text-sm font-medium text-gray-300"
           >
-            Stock
+            Estoque
           </label>
           <input
             type="number"
@@ -160,7 +160,7 @@ const CreateProductForm = () => {
             htmlFor="category"
             className="block text-sm font-medium text-gray-300"
           >
-            Category
+            Categoria
           </label>
           <select
             id="category"
@@ -174,7 +174,7 @@ const CreateProductForm = () => {
 						 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
             required
           >
-            <option value="">Select a category</option>
+            <option value="">Selecione uma categoria</option>
             {categories.map((category) => (
               <option key={category} value={category}>
                 {category}
@@ -196,7 +196,7 @@ const CreateProductForm = () => {
             className="cursor-pointer bg-gray-700 py-2 px-3 border border-gray-600 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-300 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
           >
             <Upload className="h-5 w-5 inline-block mr-2" />
-            Upload Image
+            Carregue uma imagem
           </label>
           {newProduct.image && (
             <span className="ml-3 text-sm text-gray-400">Image uploaded </span>
@@ -221,7 +221,7 @@ const CreateProductForm = () => {
           ) : (
             <>
               <PlusCircle className="mr-2 h-5 w-5" />
-              Create Product
+              Criar Produto
             </>
           )}
         </button>

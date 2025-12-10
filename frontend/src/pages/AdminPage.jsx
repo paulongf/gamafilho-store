@@ -9,9 +9,9 @@ import CreateProductForm from "../components/CreateProductForm";
 import ProductsList from "../components/ProductsList";
 
 const tabs = [
-  { id: "create", label: "Create Product", icon: PlusCircle },
-  { id: "products", label: "Products", icon: ShoppingBasket },
-  { id: "analytics", label: "Analytics", icon: BarChart },
+  { id: "create", label: "Criar Produto", icon: PlusCircle },
+  { id: "products", label: "Produtos", icon: ShoppingBasket },
+  { id: "analytics", label: "Análises", icon: BarChart },
 ];
 
 const AdminPage = () => {
@@ -22,7 +22,7 @@ const AdminPage = () => {
   useEffect(() => {
     fetchAllProducts();
   }, [fetchAllProducts]);
-  
+
   return (
     <div className="min-h-screen relative overflow-hidden">
       <div className="relative z-10 container mx-auto px-4 py-16">
@@ -32,7 +32,7 @@ const AdminPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Admin Dashboard
+          Painel Administrativo
         </motion.h1>
         <div className="flex justify-center mb-8">
           {tabs.map((tab) => (

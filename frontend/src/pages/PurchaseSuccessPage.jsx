@@ -31,13 +31,13 @@ const PurchaseSuccessPage = () => {
       handleCheckoutSuccess(sessionId);
     } else {
       setIsProcessing(false);
-      setError("No session ID found in the URL");
+      setError("ID da sessão não encontrado na URL");
     }
   }, [clearCart]);
 
-  if (isProcessing) return "Processing...";
+  if (isProcessing) return "Processando...";
 
-  if (error) return `Error: ${error}`;
+  if (error) return `Erro: ${error}`;
 
   return (
     <div className="h-screen flex items-center justify-center px-4">
@@ -56,26 +56,26 @@ const PurchaseSuccessPage = () => {
             <CheckCircle className="text-emerald-400 w-16 h-16 mb-4" />
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-center text-emerald-400 mb-2">
-            Purchase Successful!
+            Compra Realizada com Sucesso!
           </h1>
 
           <p className="text-gray-300 text-center mb-2">
-            Thank you for your order. {"We're"} processing it now.
+            Obrigado pelo seu pedido. Estamos processando agora.
           </p>
           <p className="text-emerald-400 text-center text-sm mb-6">
-            Check your email for order details and updates.
+            Verifique seu e-mail para detalhes e atualizações do pedido.
           </p>
           <div className="bg-gray-700 rounded-lg p-4 mb-6">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-400">Order number</span>
+              <span className="text-sm text-gray-400">Número do pedido</span>
               <span className="text-sm font-semibold text-emerald-400">
                 #12345
               </span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-400">Estimated delivery</span>
+              <span className="text-sm text-gray-400">Entrega estimada</span>
               <span className="text-sm font-semibold text-emerald-400">
-                3-5 business days
+                3-5 dias úteis
               </span>
             </div>
           </div>
@@ -86,14 +86,14 @@ const PurchaseSuccessPage = () => {
              rounded-lg transition duration-300 flex items-center justify-center"
             >
               <HandHeart className="mr-2" size={18} />
-              Thanks for trusting us!
+              Obrigado por confiar em nós!
             </button>
             <Link
               to={"/"}
               className="w-full bg-gray-700 hover:bg-gray-600 text-emerald-400 font-bold py-2 px-4 
             rounded-lg transition duration-300 flex items-center justify-center"
             >
-              Continue Shopping
+              Continuar Comprando
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </div>
@@ -102,4 +102,5 @@ const PurchaseSuccessPage = () => {
     </div>
   );
 };
+
 export default PurchaseSuccessPage;
