@@ -7,7 +7,7 @@ const categories = [
   { href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
   { href: "/t-shirts", name: "Camisetas", imageUrl: "/tshirts.jpg" },
   { href: "/shoes", name: "Calçados", imageUrl: "/shoes.jpg" },
-  { href: "/glasses", name: "Óculos", imageUrl: "/glasses.png" },
+  { href: "/glasses", name: "Óculos", imageUrl: "/glasses.jpg" },
   { href: "/jackets", name: "Jaquetas", imageUrl: "/jackets.jpg" },
   { href: "/suits", name: "Ternos", imageUrl: "/suits.jpg" },
   { href: "/bags", name: "Bolsas", imageUrl: "/bags.jpg" },
